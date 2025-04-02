@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Card, Button, Alert, Spinner, Tab, Tabs } from 'react-bootstrap';
-import { fetchWorkerById, createBooking } from '../services/api';
+
 import BookingModal from '../components/BookingModal';
-import ChatWindow from '../components/ChatWindow';
+
 import workerimg from '../images/worker.jpg'
 const WorkerDetail = () => {
   const { id } = useParams();
@@ -165,7 +165,7 @@ const WorkerDetail = () => {
                     </Tab>
                     <Tab eventKey="chat" title="Chat">
                       <div className="mt-3">
-                        {/* <ChatWindow workerId={worker.id} /> */}
+                    
                       </div>
                     </Tab>
                   </Tabs>

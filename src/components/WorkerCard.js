@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Button, Badge, Modal, Form,Tab,Tabs } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+
 import '../styles/WorkerCard.css';
 import workerimg from '../images/worker.jpg';
 const WorkerCard = ({ worker }) => {
