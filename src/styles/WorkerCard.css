@@ -1,0 +1,126 @@
+/* Glassy Worker Card */
+.worker-card-glass {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .worker-card-glass:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Worker Image */
+  .worker-card-img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  /* Status Badge */
+  .worker-card-status {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .status-available {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .status-busy {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Worker Name & Skills */
+  .worker-card-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .worker-card-skills {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  /* Pricing Section */
+  .worker-card-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #00b4d8;
+    margin-top: 8px;
+  }
+  
+  /* Star Ratings */
+  .worker-card-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+  }
+  
+  .worker-card-rating span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffdd57;
+  }
+  
+  /* Booking Button */
+  .worker-card-book-btn {
+    background: linear-gradient(to right, #28a745, #218838);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.3s;
+  }
+  
+  .worker-card-book-btn:hover {
+    background: linear-gradient(to right, #218838, #1e7e34);
+    transform: scale(1.05);
+  }
+  
+  /* Modal Styling */
+  .worker-card-modal-content {
+    border-radius: 12px;
+  }
+  
+  .worker-card-modal-header {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .worker-card-modal-title {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Tabs */
+  .worker-card-tabs .nav-link {
+    font-weight: 600;
+    color: #00b4d8;
+  }
+  
+  .worker-card-tabs .nav-link.active {
+    background-color: #00b4d8;
+    color: white;
+    border-radius: 8px;
+  }

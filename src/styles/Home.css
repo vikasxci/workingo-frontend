@@ -1,0 +1,34 @@
+.home-container {
+    background: linear-gradient(135deg, #4c669f, #3b5998, #192f6a);
+    min-height: 100vh;
+  }
+  
+  .hero-section {
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .filter-form {
+    background: white;
+    border-radius: 12px;
+  }
+  
+  .filter-input {
+    border-radius: 8px;
+  }
+  
+  .map-container {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  

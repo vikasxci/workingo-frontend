@@ -1,0 +1,122 @@
+.worker-detail {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .back-btn {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .worker-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .image-section {
+    position: relative;
+    text-align: center;
+  }
+  
+  .worker-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .availability-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .available {
+    background-color: #28a745;
+  }
+  
+  .unavailable {
+    background-color: #dc3545;
+  }
+  
+  .worker-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .worker-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .worker-skill {
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+  
+  .worker-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+  
+  .rating {
+    font-size: 1rem;
+  }
+  
+  .book-now {
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .book-now:hover {
+    background: #0056b3;
+  }
+  
+  .custom-tabs .nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .custom-tabs .nav-link.active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .tab-content {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  
+  .review-box {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .review-stars {
+    font-size: 1rem;
+    color: gold;
+  }
+  
