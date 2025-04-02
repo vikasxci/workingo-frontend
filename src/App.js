@@ -10,6 +10,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import PrivateRoute from './components/PrivateRoute';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Maid from './pages/Maid';
 // import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/bookings" element={<PrivateRoute><Bookings /></PrivateRoute>} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/maid-service" element={<Maid />} />
         </Routes>
       </AuthProvider>
     </Router>

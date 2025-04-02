@@ -3,7 +3,7 @@ import { Card, Button, Badge, Modal, Form,Tab,Tabs } from 'react-bootstrap';
 
 import '../styles/WorkerCard.css';
 import workerimg from '../images/worker.jpg';
-const WorkerCard = ({ worker }) => {
+const WorkerCard = ({ worker,image,rateUnit }) => {
   const [showBookingModal, setShowBookingModal] = useState(false);
   const [bookingType, setBookingType] = useState('direct'); // 'direct' or 'bid'
   const [bidAmount, setBidAmount] = useState(worker.pricePerHour);
@@ -41,14 +41,14 @@ const WorkerCard = ({ worker }) => {
       <Card className="h-100 shadow-sm">
         <Card.Img 
           variant="top" 
-          src={workerimg|| '/default-worker.jpg'} 
+          src={image || workerimg|| '/default-worker.jpg'} 
           style={{ height: '200px', objectFit: 'cover' }}
         />
         <Card.Body className="d-flex flex-column">
           <Card.Title>{worker.name}</Card.Title>
           <Badge bg="primary" className="mb-2 align-self-start">{worker.skills}</Badge>
           <div className="mb-2">
-            <strong>₹{worker.pricePerHour}</strong> per hour
+            <strong>₹{worker.pricePerHour}</strong> {rateUnit?rateUnit:"per hour"} 
           </div>
           <div className="mb-3">
             {[...Array(5)].map((_, i) => (

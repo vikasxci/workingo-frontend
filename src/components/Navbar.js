@@ -20,6 +20,7 @@ const AppNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/maid-service">Maid </Nav.Link>
             {user && <Nav.Link as={Link} to="/bookings">My Bookings</Nav.Link>}
           </Nav>
           <Nav>
